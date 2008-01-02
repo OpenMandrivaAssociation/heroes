@@ -20,6 +20,7 @@ Patch1:		heroes-0.21-fix-build-gcc4.patch.bz2
 License:	GPL
 Url:		http://heroes.sourceforge.net/
 Group:		Games/Arcade
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gettext bison SDL-devel SDL_mixer-devel
 
 %description
