@@ -96,7 +96,6 @@ mv $RPM_BUILD_ROOT%{_gamesdatadir}/locale/ $RPM_BUILD_ROOT%{_datadir}/
 %find_lang %{name}
 
 install -D -m644 mandriva-%{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop
-install -m644 %{name}.menu -D $RPM_BUILD_ROOT%{_menudir}/%{name}
 install -m644 %SOURCE6 -D $RPM_BUILD_ROOT%{_iconsdir}/%{name}.png
 install -m644 %SOURCE5 -D $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
 install -m644 %SOURCE7 -D $RPM_BUILD_ROOT%{_liconsdir}/%{name}.png
@@ -119,7 +118,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man6/%{name}*
 %{_gamesbindir}/%{name}*
 %{_datadir}/applications/*
-%{_menudir}/%{name}
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
