@@ -1,6 +1,6 @@
 %define	name		heroes
 %define	version		0.21
-%define release		%mkrel 7
+%define release		%mkrel 8
 %define	dataversion	1.5
 %define Summary		Game like Nibbles but different
 
