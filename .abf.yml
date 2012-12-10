@@ -1,8 +1,7 @@
 sources:
-  "heroes-0.21.tar.bz2:"	756b2d0ba255484fa2c830798f5f9e62088f3af1
-  "heroes-16.png:"	a6d0a412c63e953555dca20cb10d3bc3e8c7e6ff
-  "heroes-32.png:"	b320937e48e2d77dccb1e398d9b9f25e4467d93b
-  "heroes-48.png:"	949cf21ea2bdbcc6a3f9c4fbd1a142adb08dbeed
-  "heroes-data-1.5.tar.bz2:"	2aa90ac7c1760f5b137e5ee175729572d9c93d26
-  "heroes-sound-effects-1.0.tar.bz2:"	a265bc8b9ee2923e3c7539ac02346b10e767f95b
-  "heroes-sound-tracks-1.0.tar.bz2:"	a05c5e232d62c5b80c8b9d25639e65b9ade3c5b2
+  "heroes-0.21-debian-fixes.patch.bz2": 6e5e9630137726ae8d80b7461fc8ad02773d172c
+  "heroes-0.21-fix-build-gcc4.patch.bz2": 3b8f545da6ebccf28b4d07af865c2151f4fd6f82
+  "heroes-0.21.tar.bz2": 756b2d0ba255484fa2c830798f5f9e62088f3af1
+  "heroes-data-1.5.tar.bz2": 2aa90ac7c1760f5b137e5ee175729572d9c93d26
+  "heroes-sound-effects-1.0.tar.bz2": a265bc8b9ee2923e3c7539ac02346b10e767f95b
+  "heroes-sound-tracks-1.0.tar.bz2": a05c5e232d62c5b80c8b9d25639e65b9ade3c5b2

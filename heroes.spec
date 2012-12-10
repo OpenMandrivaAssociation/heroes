@@ -1,6 +1,6 @@
 %define	name		heroes
 %define	version		0.21
-%define release		%mkrel 9
+%define release		%mkrel 8
 %define	dataversion	1.5
 %define Summary		Game like Nibbles but different
 
@@ -127,3 +127,104 @@ rm -rf $RPM_BUILD_ROOT
 %{_liconsdir}/%{name}.png
 %{_infodir}/%{name}.info*
 
+
+
+%changelog
+* Fri Sep 04 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.21-8mdv2010.0
++ Revision: 429391
+- rebuild
+
+* Thu Jun 12 2008 Pixel <pixel@mandriva.com> 0.21-7mdv2009.0
++ Revision: 218432
+- rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - drop old menu
+    - kill re-definition of %%buildroot on Pixel's request
+    - import heroes
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Fri Jul  7 2006 Pixel <pixel@mandriva.com> 0.21-7mdv2007.0
+- use mkrel
+- switch to XDG menu
+
+* Tue Oct 11 2005 Pixel <pixel@mandriva.com> 0.21-6mdk
+- rebuild
+- apply patch from debian (debian bug #297314)
+
+* Thu Nov 20 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.21-5mdk
+- merge in debian fixes (P0)
+- fix buildrequires (lib64..)
+- drop Packager tag
+- minor cosmetics
+- link against sdl
+
+* Mon Aug 04 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.21-4mdk
+- rebuild
+- don't use overuse wildcards in %%files list
+- change summary macro to avoid possible conflicts
+- --disable-debug
+
+* Sat Nov 23 2002 Olivier Thauvin <thauvin@aerov.jussieu.fr> 0.21-3mdk
+- add info page
+- fix locales location
+
+* Thu Nov 12 2002 Per Øyvind Karlsen <peroyvind@delonic.no> 0.21-2mdk
+- Install stuff in the right places
+- Remove obsolete Prefix tag
+- Add menu item
+- Add icons
+- Cleanups
+
+* Thu Jun 27 2002 Pixel <pixel@mandrakesoft.com> 0.21-1mdk
+- new main release
+- new data release
+
+* Sat Feb  2 2002 Pixel <pixel@mandrakesoft.com> 0.19-1mdk
+- new main version
+- new data version
+
+* Fri Oct 26 2001 Pixel <pixel@mandrakesoft.com> 0.15-1mdk
+- new version
+
+* Fri Oct 19 2001 Pixel <pixel@mandrakesoft.com> 0.14-1mdk
+- new main version
+- new data version
+
+* Thu Oct 11 2001 Pixel <pixel@mandrakesoft.com> 0.12-3mdk
+- s/Copyright/License/
+- fix rights on sources
+
+* Thu Jul 12 2001 Daouda LO <daouda@mandrakesoft.com> 0.12-2mdk
+- update heroes source data to 1.1.
+- provides mising icons.
+
+* Wed Jul 11 2001  Daouda Lo <daouda@mandrakesoft.com> 0.12-1mdk
+- new version.
+
+* Tue Jul  3 2001 Pixel <pixel@mandrakesoft.com> 0.11-1mdk
+- new version
+
+* Mon May 14 2001 Pixel <pixel@mandrakesoft.com> 0.10-2mdk
+- rebuild with new SDL
+
+* Tue May  8 2001 Guillaume Cottenceau <gc@mandrakesoft.com> 0.10-1mdk
+- version 0.10
+
+* Mon Mar  5 2001 Pixel <pixel@mandrakesoft.com> 0.9-2mdk
+- add mo files (thanks to Alexandre Duret-Lutz)
+
+* Sat Mar  3 2001 Pixel <pixel@mandrakesoft.com> 0.9-1mdk
+- new version
+
+* Wed Dec 20 2000 Pixel <pixel@mandrakesoft.com> 0.8-1mdk
+- new version
+
+* Tue Dec 19 2000 Pixel <pixel@mandrakesoft.com> 0.7-2mdk
+- rebuild with new libSDL_mixer
+
+* Wed Nov 29 2000 Pixel <pixel@mandrakesoft.com> 0.7-1mdk
+- initial spec
