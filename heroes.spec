@@ -1,13 +1,9 @@
-%define	name		heroes
-%define	version		0.21
-%define release:		10
 %define	dataversion	1.5
-%define Summary		Game like Nibbles but different
 
-Summary:	%{Summary}
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Summary:	Game like Nibbles but different
+Name:		heroes
+Version:	0.21
+Release:	10
 Source0:	http://download.sourceforge.net/heroes/%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/heroes/%{name}-data-%{dataversion}.tar.bz2
 Source2:	http://download.sourceforge.net/heroes/%{name}-sound-tracks-1.0.tar.bz2
@@ -20,7 +16,6 @@ Patch1:		heroes-0.21-fix-build-gcc4.patch.bz2
 License:	GPL
 Url:		http://heroes.sourceforge.net/
 Group:		Games/Arcade
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gettext bison SDL-devel SDL_mixer-devel
 
 %description
