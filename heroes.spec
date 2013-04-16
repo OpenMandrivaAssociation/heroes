@@ -1,6 +1,6 @@
 %define	name		heroes
 %define	version		0.21
-%define release		%mkrel 8
+%define release:		9
 %define	dataversion	1.5
 %define Summary		Game like Nibbles but different
 
@@ -101,15 +101,9 @@ install -m644 %SOURCE5 -D $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
 install -m644 %SOURCE7 -D $RPM_BUILD_ROOT%{_liconsdir}/%{name}.png
 
 %post
-%if %mdkversion < 200900
-%update_menus
-%endif
 %_install_info %name.info
 
 %postun
-%if %mdkversion < 200900
-%clean_menus
-%endif
 %_remove_install_info %name.info
 
 %clean
