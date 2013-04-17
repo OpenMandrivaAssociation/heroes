@@ -3,7 +3,7 @@
 Summary:	Game like Nibbles but different
 Name:		heroes
 Version:	0.21
-Release:	10
+Release:	11
 Source0:	http://download.sourceforge.net/heroes/%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/heroes/%{name}-data-%{dataversion}.tar.bz2
 Source2:	http://download.sourceforge.net/heroes/%{name}-sound-tracks-1.0.tar.bz2
@@ -95,14 +95,7 @@ install -m644 %SOURCE6 -D $RPM_BUILD_ROOT%{_iconsdir}/%{name}.png
 install -m644 %SOURCE5 -D $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
 install -m644 %SOURCE7 -D $RPM_BUILD_ROOT%{_liconsdir}/%{name}.png
 
-%post
-%_install_info %name.info
-
-%postun
-%_remove_install_info %name.info
-
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(-,root,root)
@@ -144,14 +137,14 @@ rm -rf $RPM_BUILD_ROOT
 - rebuild
 - apply patch from debian (debian bug #297314)
 
-* Thu Nov 20 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.21-5mdk
+* Thu Nov 20 2003 Per Ã˜yvind Karlsen <peroyvind@linux-mandrake.com> 0.21-5mdk
 - merge in debian fixes (P0)
 - fix buildrequires (lib64..)
 - drop Packager tag
 - minor cosmetics
 - link against sdl
 
-* Mon Aug 04 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.21-4mdk
+* Mon Aug 04 2003 Per Ã˜yvind Karlsen <peroyvind@linux-mandrake.com> 0.21-4mdk
 - rebuild
 - don't use overuse wildcards in %%files list
 - change summary macro to avoid possible conflicts
@@ -161,7 +154,7 @@ rm -rf $RPM_BUILD_ROOT
 - add info page
 - fix locales location
 
-* Thu Nov 12 2002 Per Øyvind Karlsen <peroyvind@delonic.no> 0.21-2mdk
+* Thu Nov 12 2002 Per Ã˜yvind Karlsen <peroyvind@delonic.no> 0.21-2mdk
 - Install stuff in the right places
 - Remove obsolete Prefix tag
 - Add menu item
