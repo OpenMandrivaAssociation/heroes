@@ -3,7 +3,7 @@
 Summary:	Game like Nibbles but different
 Name:		heroes
 Version:	0.21
-Release:	11
+Release:	12
 Source0:	http://download.sourceforge.net/heroes/%{name}-%{version}.tar.bz2
 Source1:	http://download.sourceforge.net/heroes/%{name}-data-%{dataversion}.tar.bz2
 Source2:	http://download.sourceforge.net/heroes/%{name}-sound-tracks-1.0.tar.bz2
