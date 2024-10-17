@@ -14,7 +14,7 @@ Source7:	%{name}-48.png
 Patch0:		%{name}-0.21-debian-fixes.patch.bz2
 Patch1:		heroes-0.21-fix-build-gcc4.patch.bz2
 License:	GPL
-Url:		http://heroes.sourceforge.net/
+Url:		https://heroes.sourceforge.net/
 Group:		Games/Arcade
 BuildRequires:	gettext bison SDL-devel SDL_mixer-devel
 
